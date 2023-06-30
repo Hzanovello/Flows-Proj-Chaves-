@@ -1,0 +1,1072 @@
+[
+    {
+        "id": "057f6ad49ca14ef9",
+        "type": "tab",
+        "label": "Gerenciamento de Estoque",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "3b612cee2c25dbee",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "heloec2.duckdns.org",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "0efae7b55f394e6d",
+        "type": "ui_tab",
+        "name": "Sistema de Gerenciamento",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "527968c5bddfe52f",
+        "type": "ui_group",
+        "name": "Gráfico alternador e pastilha de freio",
+        "tab": "bcd8d41a06a73332",
+        "order": 1,
+        "disp": true,
+        "width": "19",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "4f5aa4775a77ce80",
+        "type": "ui_group",
+        "name": "Monitoramento",
+        "tab": "0efae7b55f394e6d",
+        "order": 2,
+        "disp": true,
+        "width": "10",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "4779dcd622911797",
+        "type": "MySQLdatabase",
+        "name": "",
+        "host": "mysql.c7qoqtrakrsm.us-east-2.rds.amazonaws.com",
+        "port": "3306",
+        "db": "gerenciamento",
+        "tz": "",
+        "charset": "UTF8"
+    },
+    {
+        "id": "bcd8d41a06a73332",
+        "type": "ui_tab",
+        "name": "Gráfico e Tabela",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "41b4560a6da2fc36",
+        "type": "ui_group",
+        "name": "Gráficos",
+        "tab": "0efae7b55f394e6d",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "08bb24a06b0e98da",
+        "type": "ui_spacer",
+        "z": "057f6ad49ca14ef9",
+        "name": "spacer",
+        "group": "4f5aa4775a77ce80",
+        "order": 2,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "6252474cdd4a5d73",
+        "type": "ui_spacer",
+        "z": "057f6ad49ca14ef9",
+        "name": "spacer",
+        "group": "4f5aa4775a77ce80",
+        "order": 3,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "8e2aab570c8eded8",
+        "type": "ui_spacer",
+        "z": "057f6ad49ca14ef9",
+        "name": "spacer",
+        "group": "4f5aa4775a77ce80",
+        "order": 5,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "b1ed0fb0aac9c512",
+        "type": "ui_spacer",
+        "z": "057f6ad49ca14ef9",
+        "name": "spacer",
+        "group": "4f5aa4775a77ce80",
+        "order": 6,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "02d5ee41cbd3c262",
+        "type": "ui_spacer",
+        "z": "057f6ad49ca14ef9",
+        "name": "spacer",
+        "group": "4f5aa4775a77ce80",
+        "order": 8,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "08b8e9f925764321",
+        "type": "ui_spacer",
+        "z": "057f6ad49ca14ef9",
+        "name": "spacer",
+        "group": "4f5aa4775a77ce80",
+        "order": 9,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "a0e28ce921dd8674",
+        "type": "ui_spacer",
+        "z": "057f6ad49ca14ef9",
+        "name": "spacer",
+        "group": "4f5aa4775a77ce80",
+        "order": 11,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "9b8d022f1913ed6c",
+        "type": "ui_spacer",
+        "z": "057f6ad49ca14ef9",
+        "name": "spacer",
+        "group": "4f5aa4775a77ce80",
+        "order": 12,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "089a52d27f79e478",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-dark",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#770080",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#f1f0f4",
+                "baseFont": "Arial Black,Arial Black,Gadget,sans-serif",
+                "reset": false
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#097479",
+                    "value": "#770080",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#770080",
+                    "edited": true
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": true
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#333333",
+                    "edited": true
+                },
+                "group-textColor": {
+                    "value": "#be00cc",
+                    "edited": true
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": true
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": true
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#770080",
+                    "edited": true
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": true
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "af8013010eae05ed",
+        "type": "mqtt in",
+        "z": "057f6ad49ca14ef9",
+        "name": "",
+        "topic": "esp32/alternador",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "3b612cee2c25dbee",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 100,
+        "y": 180,
+        "wires": [
+            [
+                "7d91d8995c9bd39e",
+                "4a5ed186b0a11f03",
+                "37d986270510e3c3"
+            ]
+        ]
+    },
+    {
+        "id": "7d91d8995c9bd39e",
+        "type": "function",
+        "z": "057f6ad49ca14ef9",
+        "name": "Turn On LED",
+        "func": "\n\n\nvar sensorValuealternador = msg.payload;\n\nif (sensorValuealternador <= 25 || sensorValuealternador >= 85) {\n    // LED Vermelho\n    msg.payload = false;\n    msg.color = \"#ff0000\"; // Cor vermelha\n} else {\n\n    // LED Verde\n    msg.payload = true;\n    msg.color = \"#00ff00\"; // Cor verde\n}\n\nreturn msg;\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 180,
+        "wires": [
+            [
+                "303f69b5e4caf3a9"
+            ]
+        ]
+    },
+    {
+        "id": "4a5ed186b0a11f03",
+        "type": "ui_chart",
+        "z": "057f6ad49ca14ef9",
+        "name": "Gráfico do Alternador",
+        "group": "41b4560a6da2fc36",
+        "order": 2,
+        "width": 6,
+        "height": 4,
+        "label": "Alternador",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 380,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "37d986270510e3c3",
+        "type": "ui_gauge",
+        "z": "057f6ad49ca14ef9",
+        "name": "Medidor de Alternador",
+        "group": "4f5aa4775a77ce80",
+        "order": 1,
+        "width": 6,
+        "height": 4,
+        "gtype": "gage",
+        "title": "Alternador",
+        "label": "%",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#ea0606",
+            "#29e203",
+            "#f70202"
+        ],
+        "seg1": "25",
+        "seg2": "75",
+        "diff": false,
+        "className": "",
+        "x": 380,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "303f69b5e4caf3a9",
+        "type": "ui_led",
+        "z": "057f6ad49ca14ef9",
+        "order": 4,
+        "group": "4f5aa4775a77ce80",
+        "width": 3,
+        "height": 1,
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "false",
+                "valueType": "bool"
+            },
+            {
+                "color": "#008000",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "LED-alternador",
+        "x": 580,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "f6a5d61cc2cbbc59",
+        "type": "mqtt in",
+        "z": "057f6ad49ca14ef9",
+        "name": "",
+        "topic": "esp32/pastilha_de_freio",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "3b612cee2c25dbee",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 120,
+        "y": 420,
+        "wires": [
+            [
+                "6cae2cc874c5b835",
+                "c401cfa0735ed2d0",
+                "e35907a721bc6232"
+            ]
+        ]
+    },
+    {
+        "id": "6cae2cc874c5b835",
+        "type": "function",
+        "z": "057f6ad49ca14ef9",
+        "name": "Turn On LED",
+        "func": "var sensorValuepatilha_de_freio = msg.payload;\n\nif (sensorValuepatilha_de_freio <= 25 || sensorValuepatilha_de_freio >= 85) {\n    // LED Vermelho\n    msg.payload = false;\n    msg.color = \"#ff0000\"; // Cor vermelha\n} else {\n\n    // LED Verde\n    msg.payload = true;\n    msg.color = \"#00ff00\"; // Cor verde\n}\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 420,
+        "wires": [
+            [
+                "a21c11738110e4e4"
+            ]
+        ]
+    },
+    {
+        "id": "c401cfa0735ed2d0",
+        "type": "ui_chart",
+        "z": "057f6ad49ca14ef9",
+        "name": "Gráfico de Pastilha de Freio",
+        "group": "41b4560a6da2fc36",
+        "order": 1,
+        "width": 6,
+        "height": 4,
+        "label": "Pastilha de Freio",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "100",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 440,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e35907a721bc6232",
+        "type": "ui_gauge",
+        "z": "057f6ad49ca14ef9",
+        "name": "Medidor de Pastilha de Freio",
+        "group": "4f5aa4775a77ce80",
+        "order": 7,
+        "width": 6,
+        "height": 4,
+        "gtype": "gage",
+        "title": "Pastilha de Freio",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#f00505",
+            "#0af539",
+            "#ef0606"
+        ],
+        "seg1": "25",
+        "seg2": "75",
+        "diff": false,
+        "className": "",
+        "x": 440,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "a21c11738110e4e4",
+        "type": "ui_led",
+        "z": "057f6ad49ca14ef9",
+        "order": 10,
+        "group": "4f5aa4775a77ce80",
+        "width": 3,
+        "height": 1,
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "false",
+                "valueType": "bool"
+            },
+            {
+                "color": "#008000",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "LED-pastilha_de_freio",
+        "x": 640,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "eca90992854f5dbf",
+        "type": "mqtt in",
+        "z": "057f6ad49ca14ef9",
+        "name": "",
+        "topic": "esp32/alternador",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "3b612cee2c25dbee",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 100,
+        "y": 700,
+        "wires": [
+            [
+                "26817eb8c29b0984"
+            ]
+        ]
+    },
+    {
+        "id": "773d3ae6d829d371",
+        "type": "mqtt in",
+        "z": "057f6ad49ca14ef9",
+        "name": "",
+        "topic": "esp32/pastilha_de_freio",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "3b612cee2c25dbee",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 120,
+        "y": 780,
+        "wires": [
+            [
+                "c472dba54b5c5901"
+            ]
+        ]
+    },
+    {
+        "id": "26817eb8c29b0984",
+        "type": "function",
+        "z": "057f6ad49ca14ef9",
+        "name": "alternador",
+        "func": "var alternador = msg.payload;\n\nmsg.alternador = alternador;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 700,
+        "wires": [
+            [
+                "87ac7abb3c65df5b"
+            ]
+        ]
+    },
+    {
+        "id": "c472dba54b5c5901",
+        "type": "function",
+        "z": "057f6ad49ca14ef9",
+        "name": "pastilha_de_freio",
+        "func": "\nvar pastilha_de_freio = msg.payload;\n\nmsg.pastilha_de_freio = pastilha_de_freio;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 780,
+        "wires": [
+            [
+                "87ac7abb3c65df5b"
+            ]
+        ]
+    },
+    {
+        "id": "87ac7abb3c65df5b",
+        "type": "join",
+        "z": "057f6ad49ca14ef9",
+        "name": "",
+        "mode": "custom",
+        "build": "object",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": true,
+        "timeout": "",
+        "count": "2",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 590,
+        "y": 780,
+        "wires": [
+            [
+                "e350861ae1548d44"
+            ]
+        ]
+    },
+    {
+        "id": "e350861ae1548d44",
+        "type": "delay",
+        "z": "057f6ad49ca14ef9",
+        "name": "",
+        "pauseType": "rate",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 790,
+        "y": 780,
+        "wires": [
+            [
+                "5cb5491b6894ca5e"
+            ]
+        ]
+    },
+    {
+        "id": "5cb5491b6894ca5e",
+        "type": "function",
+        "z": "057f6ad49ca14ef9",
+        "name": "INSERT",
+        "func": "var alternador = msg.payload['esp32/alternador'] || 0;\nvar pastilha_de_freio = msg.payload['esp32/pastilha_de_freio'] || 0;\n\nmsg.topic = \"INSERT INTO estoque (alternador, pastilha_de_freio ,timeStamp) VALUES (\" + alternador + \", \" + pastilha_de_freio + \",CURRENT_TIMESTAMP);\"\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 980,
+        "y": 780,
+        "wires": [
+            [
+                "1da12ba442d4a7e6"
+            ]
+        ]
+    },
+    {
+        "id": "1e9db00707954b40",
+        "type": "inject",
+        "z": "057f6ad49ca14ef9",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 790,
+        "y": 640,
+        "wires": [
+            [
+                "5cb5491b6894ca5e"
+            ]
+        ]
+    },
+    {
+        "id": "1da12ba442d4a7e6",
+        "type": "mysql",
+        "z": "057f6ad49ca14ef9",
+        "mydb": "4779dcd622911797",
+        "name": "conexao_mysql",
+        "x": 1180,
+        "y": 780,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "63517ddea9057536",
+        "type": "inject",
+        "z": "057f6ad49ca14ef9",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 90,
+        "y": 980,
+        "wires": [
+            [
+                "d7f2ed6f1242ddb8"
+            ]
+        ]
+    },
+    {
+        "id": "d7f2ed6f1242ddb8",
+        "type": "function",
+        "z": "057f6ad49ca14ef9",
+        "name": "SELECT",
+        "func": "\n\n\nmsg.topic = \"SELECT alternador as alternador, pastilha_de_freio as pastilha_de_freio, timeStamp as timeStamp FROM estoque where timeStamp >= now() - 84600;\"\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 260,
+        "y": 980,
+        "wires": [
+            [
+                "e9c51df053493dc4"
+            ]
+        ]
+    },
+    {
+        "id": "e9c51df053493dc4",
+        "type": "mysql",
+        "z": "057f6ad49ca14ef9",
+        "mydb": "4779dcd622911797",
+        "name": "conexao_mysql",
+        "x": 440,
+        "y": 980,
+        "wires": [
+            [
+                "585f1abd94819bbe"
+            ]
+        ]
+    },
+    {
+        "id": "585f1abd94819bbe",
+        "type": "change",
+        "z": "057f6ad49ca14ef9",
+        "name": "Format data",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "(\t   $series := [\t       {\t           \"label\": \"Alternador (%)\",\t           \"field\": \"alternador\" \t       },\t       {\t           \"label\": \"Pastilha de Freio (%)\",\t           \"field\": \"pastilha_de_freio\" \t       }\t  ];\t   $xaxis := \"timeStamp\";\t   [\t       {\t           \"series\": $series.label,\t           \"data\": $series.[\t               (\t                   $yaxis := $.field;\t                   $$.payload.{\t                       \"x\": $lookup($, $xaxis),\t                       \"y\": $lookup($, $yaxis)\t          }\t        )\t      ]\t    }\t  ]\t)",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 650,
+        "y": 980,
+        "wires": [
+            [
+                "fa822dc139620c70"
+            ]
+        ]
+    },
+    {
+        "id": "fa822dc139620c70",
+        "type": "ui_chart",
+        "z": "057f6ad49ca14ef9",
+        "name": "Gráfico",
+        "group": "527968c5bddfe52f",
+        "order": 1,
+        "width": 19,
+        "height": 6,
+        "label": "Gráfico Alternador e Pastilha de Freio",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "100",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#440822",
+            "#e70472",
+            "#e74b08",
+            "#f0a400",
+            "#d7b047",
+            "#d7c028",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 840,
+        "y": 980,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "cd6225dd8a37eee3",
+        "type": "inject",
+        "z": "057f6ad49ca14ef9",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 90,
+        "y": 1080,
+        "wires": [
+            [
+                "8171e8e8640eee42"
+            ]
+        ]
+    },
+    {
+        "id": "8171e8e8640eee42",
+        "type": "function",
+        "z": "057f6ad49ca14ef9",
+        "name": "SELECT",
+        "func": "\nmsg.topic = \"SELECT * FROM estoque ORDER BY timeStamp DESC LIMIT 10;\"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 260,
+        "y": 1080,
+        "wires": [
+            [
+                "0e90ac523d9ade47"
+            ]
+        ]
+    },
+    {
+        "id": "0e90ac523d9ade47",
+        "type": "mysql",
+        "z": "057f6ad49ca14ef9",
+        "mydb": "4779dcd622911797",
+        "name": "conexao_mysql",
+        "x": 440,
+        "y": 1080,
+        "wires": [
+            [
+                "b2716f036746e0a3"
+            ]
+        ]
+    },
+    {
+        "id": "b2716f036746e0a3",
+        "type": "function",
+        "z": "057f6ad49ca14ef9",
+        "name": "Formatar Dados",
+        "func": "const formattedData = [];\n\nmsg.payload.forEach((row) => {\n    const formattedRow = {\n        hora: row.timeStamp,\n        alternador: row.alternador,\n        pastilha_de_freio: row.pastilha_de_freio\n    };\n    formattedData.push(formattedRow);\n});\n\nmsg.payload = formattedData;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 660,
+        "y": 1080,
+        "wires": [
+            [
+                "17b1110fdbb07725"
+            ]
+        ]
+    },
+    {
+        "id": "17b1110fdbb07725",
+        "type": "ui_template",
+        "z": "057f6ad49ca14ef9",
+        "group": "527968c5bddfe52f",
+        "name": "Tabela",
+        "order": 2,
+        "width": 19,
+        "height": 6,
+        "format": "<div layout=\"row\" layout-align=\"start center\">\n    <span flex>Hora</span>\n    <span flex>Alternador</span>\n    <span flex>Pastilha de Freio</span>\n\n</div>\n<div layout=\"row\" layout-align=\"start center\" ng-repeat=\"row in msg.payload\">\n    <span flex style=\"color: white\">{{row.hora}}</span>\n    <span flex style=\"color: white\">{{row.alternador}} %</span>\n    <span flex style=\"color: white\">{{row.pastilha_de_freio}} %</span>\n\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 830,
+        "y": 1080,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f39238b109580f1e",
+        "type": "inject",
+        "z": "057f6ad49ca14ef9",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 80,
+        "y": 1220,
+        "wires": [
+            [
+                "bd793cba568fc2f0"
+            ]
+        ]
+    },
+    {
+        "id": "bd793cba568fc2f0",
+        "type": "function",
+        "z": "057f6ad49ca14ef9",
+        "name": "DELET",
+        "func": "\nmsg.topic = \"Delete  FROM estoque ;\"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 260,
+        "y": 1220,
+        "wires": [
+            [
+                "60fac04499035ed3"
+            ]
+        ]
+    },
+    {
+        "id": "60fac04499035ed3",
+        "type": "mysql",
+        "z": "057f6ad49ca14ef9",
+        "mydb": "4779dcd622911797",
+        "name": "conexao_mysql",
+        "x": 440,
+        "y": 1220,
+        "wires": [
+            [
+                "898a6afe72f41986"
+            ]
+        ]
+    },
+    {
+        "id": "898a6afe72f41986",
+        "type": "debug",
+        "z": "057f6ad49ca14ef9",
+        "name": "dados mysql",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 670,
+        "y": 1220,
+        "wires": []
+    }
+]
